@@ -22,6 +22,9 @@ Verkkoliitännät (Network interface) eivät ole aina fyysisiä.
 | lo    | Loopback adapteri |
 
 ---
+## a) Asenna Linux
+Asennettu VirtualBoxiin Debian.
+
 ## b) Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 <img width="350" height="100" alt="kuva" src="https://github.com/user-attachments/assets/6ce582a6-3d69-460a-b6c4-c213b0efd844" />
 <img width="350" height="100" alt="kuva" src="https://github.com/user-attachments/assets/7cf7e1fe-3a04-41ba-8b0f-66a90f39ac9a" />
