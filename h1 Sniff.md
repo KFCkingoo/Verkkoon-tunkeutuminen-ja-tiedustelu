@@ -48,7 +48,7 @@ sudo adduser abc wireshark
 
 ---
 ## e) Mitäs tuli surffattua? `https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap`
-Tiedot saatiin lukemalla Wireshark taulokkoa ja Statistics -> Capture File Properties.
+Tiedot saatiin lukemalla Wireshark taulokkoa, Statistics -> Capture File Properties ja Protocol Hierarchy.
 
 | tyyppi | arvo |
 | - | - |
