@@ -50,13 +50,13 @@ sudo adduser abc wireshark
 ## e) Mitäs tuli surffattua? `https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap`
 Tiedot saatiin lukemalla Wireshark taulokkoa ja Statistics -> Capture File Properties.
 
-| tyyppi | määrä |
+| tyyppi | arvo |
 | - | - |
 | Koneita | 2 |
 | Paketti | 283 |
 | Koko | 126 kB |
-| Aika | 7.5 |
-| Protokollat | IPv4, UDP (QUIC, DNS), TCP (TLS), ARP |
+| Aika | 7.5s |
+| Protokollat | IPv4, UDP (QUIC, DNS), TCP (TLSv), ARP |
 
 Wireshark taulukossa luki google.com (selaimen aloitussivu?), terokarvinen.com, gc.zgo.at ja goatcounter.netlify.com. 
 
@@ -79,6 +79,13 @@ Aikaisemman tehtävän e) perusteella ja käyttäen `dns.qry.name` filtteriä, s
 ## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. Analysoi se
 Liikenteen sieppaamiseen otettiin Firefox-selaimen aloitussivun uudelleenlataus.
 
+| tyyppi | arvo |
+| - | - |
+| Paketti | 68 |
+| Koko | 17 kB |
+| Aika | 0.12s |
+| Protokollat | IPv4, UDP (DNS), TCP (TLSv1.2) |
+
 Liikenteessä tuli esille DNS-kyselyitä ja IP-osoitteita kuten ads-img.mozilla.org ja tosi monelta eri sivuilta.
 
 <img width="1131" height="176" alt="kuva" src="https://github.com/user-attachments/assets/8770695c-60df-491f-ac3e-c519f56c09f6" />
@@ -91,6 +98,7 @@ Liikenteessä tuli esille DNS-kyselyitä ja IP-osoitteita kuten ads-img.mozilla.
 Huomattiinkin myöhemmin kun suljettiin Wireshark ikkuna, että niitä käytettiin selaimen aloitussivun pikalinkkeihin.
 
 <img width="1032" height="427" alt="kuva" src="https://github.com/user-attachments/assets/b686f39f-664f-4869-9f0b-b60de5fa3a8f" />
+
 
 
 ---
