@@ -56,7 +56,7 @@ Tiedot saatiin lukemalla Wireshark taulokkoa, Statistics -> Capture File Propert
 | Paketti | 283 |
 | Koko | 126 kB |
 | Aika | 7.5s |
-| Protokollat | IPv4, UDP (QUIC, DNS), TCP (TLSv), ARP |
+| Protokollat | IPv4, UDP (QUIC, DNS), TCP (TLS), ARP |
 
 Wireshark taulukossa luki google.com (selaimen aloitussivu?), terokarvinen.com, gc.zgo.at ja goatcounter.netlify.com. 
 
