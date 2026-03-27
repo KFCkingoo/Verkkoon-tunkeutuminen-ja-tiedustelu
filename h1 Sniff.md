@@ -79,7 +79,7 @@ Aikaisemman tehtävän e) perusteella ja käyttäen `dns.qry.name` filtteriä, s
 ## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. Analysoi se
 Liikenteen sieppaamiseen otettiin Firefox-selaimen aloitussivun uudelleenlataus.
 
-Liikenteessä tuli esille DNS-kyselyitä ja IP-osoitteita ads-img.mozilla.org ja tosi monelta eri sivuilta.
+Liikenteessä tuli esille DNS-kyselyitä ja IP-osoitteita kuten ads-img.mozilla.org ja tosi monelta eri sivuilta.
 
 <img width="1131" height="176" alt="kuva" src="https://github.com/user-attachments/assets/8770695c-60df-491f-ac3e-c519f56c09f6" />
 
