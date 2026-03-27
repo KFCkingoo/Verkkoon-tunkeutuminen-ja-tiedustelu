@@ -44,7 +44,7 @@ sudo adduser abc wireshark
 | Application | TLS |
 | Transport | TCP |
 | Internet | IPv4 |
-| Network Access | Ethernet 1 |
+| Link | Ethernet 2 |
 
 ---
 ## e) Mitäs tuli surffattua? `https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap`
@@ -64,16 +64,33 @@ Kun filteröitiin paketteja käyttämällä `tls` tuli vain esille gc.zgo.at ja 
 
 Filtterillä `frame contains ".com"` saatiin esille vain terokarvinen.com ja terokarvinen.goatcounter.com.
 
-Niillä päätellen surffattiin Teron sivustolle goatcounter.com.
+Niillä päätellen surffattiin Teron sivustolle terokarvinen.goatcounter.com.
 
 ---
-## g) Minkä merkkinen verkkokortti käyttäjällä on? `https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap`
+## g) Minkä merkkinen verkkokortti käyttäjällä on?
+Käytettiin MAC Address Blocks työkalua ja etsittiin `52:54:00` OUI-koodilla ja löytöjä oli 0. Voitiin olettaa, että kyseessä oli VM verkkokortti.
+
+Tarkistettiin Copilotilla ja se antoi tulokseksi QEMU/KVM virtuaalikoneiden käyttämät verkkokortit.
+
+---
+## h) Millä weppipalvelimella käyttäjä on surffaillut?
+Aikaisemman tehtävän e) perusteella ja käyttäen `dns.qry.name` filtteriä, saatiin samat sivut. Mutta vain tietyissä sivustoilla oli ip-osoitteet näkyvillä. Onkohan sitten surffailtu sivut google.com, terokarvinen.com ja terokarvinen.goatcounter.com?
+
+## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. Analysoi se
+Liikenteen sieppaamiseen otettiin Firefox-selaimen aloitussivun uudelleenlataus.
+
+Liikenteessä tuli esille DNS-kyselyitä ja IP-osoitteita ads-img.mozilla.org ja tosi monelta eri sivuilta.
+
+<img width="1131" height="176" alt="kuva" src="https://github.com/user-attachments/assets/8770695c-60df-491f-ac3e-c519f56c09f6" />
+
+<img width="445" height="72" alt="kuva" src="https://github.com/user-attachments/assets/5de8d4a9-9ff7-4ab7-9da1-2e23b9570ad2" />
 
 
+>_Kuvakaappaukset mielenkiintoisista DNS-kyselyistä._
 
+Huomattiinkin myöhemmin kun suljettiin Wireshark ikkuna, että niitä käytettiin selaimen aloitussivun pikalinkkeihin.
 
-
-
+<img width="1032" height="427" alt="kuva" src="https://github.com/user-attachments/assets/b686f39f-664f-4869-9f0b-b60de5fa3a8f" />
 
 
 ---
