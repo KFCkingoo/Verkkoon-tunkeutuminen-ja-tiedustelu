@@ -95,7 +95,7 @@ ngrep asennus ja verkkoliikenteen sieppaus
 ```
 sudo apt install ngrep
 sudo ngrep -d lo -i nmap
-sudo nmap -A localhost # toisella terminaalilla
+sudo nmap -A localhost       # toisella terminaalilla
 
 T 127.0.0.1:52778 -> 127.0.0.1:631 [AP] #2130
   GET / HTTP/1.1..User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/boo
@@ -113,7 +113,7 @@ T 127.0.0.1:42256 -> 127.0.0.1:80 [AP] #2146
 ```
 
 <details>
-  <summary>Näytä kaikki nmap kohdat</summary>
+  <summary>Näytä kaikki nmap osumat</summary>
   
     T 127.0.0.1:52778 -> 127.0.0.1:631 [AP] #2130
       GET / HTTP/1.1..User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/boo
