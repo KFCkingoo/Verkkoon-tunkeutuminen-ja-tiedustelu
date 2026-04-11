@@ -13,7 +13,8 @@ AMD Ryzen 7
 - Pyramidi kertoo indikaattorien merkityksestä ja sen suhteesta hyökkääjän tuskaan kun niitä estetään.
 
 ### Selitä timanttimallin (Diamond Model) idea 1-2 virkkeellä.
-- Timanttimallilla analysoidaan hyökkäykset. Se koostuu 4 avaintekijöistä ja niiden suhteesta toisistaan: **_adversary, infrastructure, capability, victim_**.
+- Timanttimallilla analysoidaan hyökkäykset.
+- Koostuu 4 avaintekijöistä ja niiden suhteesta toisistaan: **_adversary, infrastructure, capability, victim_**.
 
 ---
 ## a) Apache log. Asenna Apache-weppipalvelin paikalliselle virtuaalikoneellesi. Surffaa palvelimellesi salaamattomalla HTTP-yhteydellä, http://localhost . Etsi omaa sivulataustasi vastaava lokirivi.
