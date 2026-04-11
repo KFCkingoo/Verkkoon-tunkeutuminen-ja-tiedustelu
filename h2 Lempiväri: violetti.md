@@ -380,14 +380,55 @@ User-Agent muutos onnistunut.
 
 ---
 ## h) Pienemmät jäljet. Porttiskannaa weppipalvelimesi uudelleen localhost-osoitteella. Tarkastele sekä Apachen lokia että siepattua verkkoliikennettä. Mikä on muuttunut, kun vaihdoit user-agent:n? Löytyykö lokista edelleen tekstijono "nmap"?
+Avattiin Wireshark ja ajettiin `sudo nmap -A localhost --script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)"`.
 
-<img width="700" height="256" alt="kuva" src="https://github.com/user-attachments/assets/cde28bdf-8d61-4f5a-aff0-9585f83fded5" />
-<img width="700" height="343" alt="kuva" src="https://github.com/user-attachments/assets/c702422b-6634-4f96-980f-290d5fa37c7f" />
+<img width="700" height="250" alt="kuva" src="https://github.com/user-attachments/assets/cde28bdf-8d61-4f5a-aff0-9585f83fded5" />
+
+<img width="700" height="250" alt="kuva" src="https://github.com/user-attachments/assets/c702422b-6634-4f96-980f-290d5fa37c7f" />
 
 Wiresharkissa vähemmän pyyntöjä ja nmap oli vielä esillä 2 Wiresharkin datapaketissa. Apache-lokissa ei ollut nmap näkyvillä.
 
 ---
-## ) Hieman vaikeampi: LoWeR ChEcK. Poista skritiskannauksesta viimeinenkin "nmap" -teksti. Etsi löytämääsi tekstiä /usr/share/nmap -hakemistosta ja korvaa se toisella. Tee porttiskannaus ja tarkista, että "nmap" ei näy isolla eikä pienellä kirjoitettuna Apachen lokissa eikä siepatussa verkkoliikenteessä. (Tässä tehtävässä voit muokata suoraan lua-skriptejä /usr/share/nmap alta, 'sudoedit'. Muokatun version paketoiminen siis rajataan ulos tehtävästä.)
+## i) Hieman vaikeampi: LoWeR ChEcK. Poista skritiskannauksesta viimeinenkin "nmap" -teksti. Etsi löytämääsi tekstiä /usr/share/nmap -hakemistosta ja korvaa se toisella. Tee porttiskannaus ja tarkista, että "nmap" ei näy isolla eikä pienellä kirjoitettuna Apachen lokissa eikä siepatussa verkkoliikenteessä. (Tässä tehtävässä voit muokata suoraan lua-skriptejä /usr/share/nmap alta, 'sudoedit'. Muokatun version paketoiminen siis rajataan ulos tehtävästä.)
+Etsittiin hakemistosta nmaplowercheck komennolla `grep -ir "nmaplowercheck"`. Hakemistosta löytyi lua-skripti nselib/http.lua:  local URL_404_1 = '/nmaplowercheck' .. os.time(os.date('*t')). Etsittiin lua-skriptistä nmap `cat nselib/http.lua | grep -i "nmap"`.
+
+<img width="1162" height="380" alt="kuva" src="https://github.com/user-attachments/assets/7e8ca7c9-7744-4d36-bcc1-00e5b56041d6" />
+
+Microlla `ctrl+F` etsittiin nmaplowercheck. Muokattiin se mikrolla `abclowercheck`. Ajettiin nmap `sudo nmap localhost -A localhost  --script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)"`.
+
+<img width="222" height="97" alt="kuva" src="https://github.com/user-attachments/assets/c6d48459-2f13-4727-a578-ec44b68b4b41" />
+
+Wiresharkissa ei enään näkynyt nmap.
+
+Apache-lokia piti tyhjentää ennen tarkistusta `sudo truncate -s 0 /var/log/apache2/access.log`.
+
+Ajettiin nmap uudelleen ja tarkistettiin apache-loki `grep -i "nmap" /var/log/apache2/access.log`.
+
+Kokeiltiin etsiä muokattu "abc" ja grep löysi lokista 2 osumaa.
+
+```
+127.0.0.1 - - [11/Apr/2026:21:23:44 +0300] "GET /abclowercheck1775931824 HTTP/1.1" 404 491 "-" "BSD experimental on XBox350 alpha (emulated on Nokia 3110)"
+127.0.0.1 - - [11/Apr/2026:21:23:52 +0300] "GET /abclowercheck1775931832 HTTP/1.1" 404 491 "-" "BSD experimental on XBox350 alpha (emulated on Nokia 3110)"
+```
+
+Poistettiin skriptiskannauksesta "nmap"-teksti onnistuneesti.
+
+---
+## j) FCC ID. Etsi valitsemasi langattoman laitteen tiedot FCC ID:llä. Mitä liikenteen purkamista tai manipuloimista hyödyttävää tietoa löydät?
+Tosi monessa langattomassa laitteissa ei ollut FCC ID helposti saatavilla. Otettiin laitteeksi Gamesir Cyclone 2.
+
+<img width="1041" height="351" alt="Näyttökuva 2026-04-11 222550" src="https://github.com/user-attachments/assets/3d17871c-9ba8-4398-b009-2f50712f2611" />
+
+Sivustossa on annettu tietoa antennista, sisäiset ja ulkoiset kuvat, testiraportti bluetoothista.
 
 ---
 ## Lähteet
+Bianco 2013. The Pyramid of Pain. https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html
+
+Caltagirone et al 2013. Diamond Model. https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf
+
+FCC. https://www.fcc.gov/oet/ea/fccid
+
+Karvinen 2026. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#laksyt
+
+Microsoft Copilot hyödynnetty joissakin tulkinnoissa.  https://copilot.microsoft.com/
