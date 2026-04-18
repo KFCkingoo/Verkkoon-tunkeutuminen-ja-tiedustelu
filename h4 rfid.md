@@ -59,7 +59,7 @@ APDU-komentokehys koostuu 4 pakollisesta tavusta **CLA, INS, P1, P2** ja valinna
 
 ---
 ## 3. Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutiset löysit. (Vinkki, useimmat liittyvät henkilökortteihin)
-MIFARE classic FM11RF08S kontaktittomissa korteissa löydettiin laitteiston takaportti. Takaportti mahdollistaa rfid-korttien kloonauksen ja pääsyn lukittuihin tiloihin kuten hotelli- ja toimistohuoneisiin.
+MIFARE classic FM11RF08S kontaktittomissa korteissa löydettiin laitteiston takaportti. Takaportti mahdollistaa RFID-korttien kloonauksen ja pääsyn lukittuihin tiloihin kuten hotelli- ja toimistohuoneisiin.
  
 Takaportti oli käytössä jo 2007 lähtien.
 
