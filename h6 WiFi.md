@@ -12,7 +12,7 @@ Labissa on harjoituksia ja valmiit työkalut verkon tiedusteluun.
 
 Tunnilla käytiin läpi miten WEP ja WPA-PSK hyökkäykset toimii Labissa. Käynnistetään WLAN ja monitoroidaan se, etsitään sieltä mitä WLAN kanavia kuunnellaan ja generoidaan sinne liikennettä hyökkäystä varten.
 
-#### Turvallisuus WEP < WPA
+**WPA on turvallisempi kuin WEP.**
 
 ---
 ## b) Kirjoita raportti siitä mitä opit ja mitkä asia yllättivät sinut kun tutustuit harjoitukseen.
@@ -24,12 +24,13 @@ Yllätyin myös tosi paljon, että verkkoja voi myös kuunnella ilman internetti
 ---
 ## c) Miten suhtautumisesi WLanin turvallisuuteen muuttui sen jälkeen kun teit harjoitukset?
 Suhtautuminen WLANin turvallisuuteen on laskenut paljon tämän tehtävän myötä. Hyvä, että WEP-protokollaa ei enään pyritä käyttämään ja WPA2 on nykyinen standardi.
-Tosin WPA2 heikkoutena voi olla heikko salasana, tämän vahvistaa WPA3.
+Tosin WPA2 heikkoutena voi olla heikko salasana, tämän vahvistaa WPA3. Tarkistin myös, että itselläni ei ole WEP käytössä. :D
 
 Jos on pakko yhdistää julkiseen avoimeen WLAN‑verkkoon, käyttäisin VPN:ää lisäsuojana ja suosittelisin myös HTTPS‑yhteyksien käyttöä. Muuten suosin mobiilidatan käyttöä.
 
 ---
 ## Lähteet
 Moodle. Larin materiaali.
+
 WiFiChallenge Lab. https://lab.wifichallenge.com/
 
