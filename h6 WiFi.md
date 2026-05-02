@@ -8,9 +8,9 @@ AMD Ryzen 7
 
 ---
 ## a) Tutustu wifi challenge lab 2.1 harjoitus ympäristöön ja käytä tarvittaessa hyväksesi jo olemassa olevia ohjeita.
-Labissa on harjoituksia ja valmiit työkalut verkon tiedusteluun.
+Labissa on harjoituksia ja valmiit työkalut verkon tiedusteluun. Tunnilla tutkittiin miten saadaan ympäristössä tiedot kuten WLANin kanavat ja laitteiden MACit.
 
-Tunnilla käytiin läpi miten WEP ja WPA-PSK hyökkäykset toimii Labissa. Käynnistetään WLAN ja monitoroidaan se, etsitään sieltä mitä WLAN kanavia kuunnellaan ja generoidaan sinne liikennettä hyökkäystä varten.
+Tunnilla käytiin läpi myös miten WEP ja WPA-PSK hyökkäykset toimivat Labissa. Käynnistettiin WLAN ja monitoroitiin se, etsittiin sieltä mitä WLAN kanavia kuunneltiin ja generoitiin sinne liikennettä hyökkäystä varten.
 
 **WPA on turvallisempi kuin WEP.**
 
