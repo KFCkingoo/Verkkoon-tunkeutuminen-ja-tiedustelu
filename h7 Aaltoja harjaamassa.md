@@ -102,7 +102,8 @@ Jos oletetaan, että tiedoston nimessä olevat tiedot ovat oikeita niin osa URH-
 
 ---
 ## g) Bittistä. Demoduloi signaali niin, että saat raakabittejä. Mikä on oikea modulaatio? Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin. (Monissa singaaleissa on line encoding, eli lopullisia bittejä varten näitä "raakabittejä" on vielä käsiteltävä)
-Valittiin Signal view: Demodulated ja bittilistalta valittiin bitit kunnes se täytti yhden signaalin:
+Valittiin Signal view: Demodulated ja bittilistalta valittiin bitit kunnes se täytti yhden signaalin.
+
 <img width="706" height="474" alt="kuva" src="https://github.com/user-attachments/assets/4ad2c853-6c34-4fd7-a585-307116ae563f" />
 
 Valittuja näytteitä oli 521 ja kesto 521 mikrosekuntia(µs). Vertaamiseen käytettiin Microsoft Copilottia: 0.521ms on 0,5% eli 1/200 silmänräpäyksestä.
