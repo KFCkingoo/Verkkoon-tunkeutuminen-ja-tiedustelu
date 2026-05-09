@@ -10,12 +10,14 @@ AMD Ryzen 7
 ---
 ## x) Lue ja tiivistä
 #### Hubacek 2019: [Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs](https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s)
-- Nopea hhje URH-työkalun käyttöön, sillä napataan 433 MHz radiotaajuuksia.
+- Nopea ohje URH-työkalun käyttöön
 - Spectrum Analyzer -> Record Signal
-- Modulation: ASK / Show Signal as: Hex
+- Hyödylliset toiminnot:
+  - Modulation: ASK
+  - Show Signal as
 
 #### Cornelius 2022: [Decode 433.92 MHz weather station data](https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html)
-- Blogi näyttää tarkemman esimerkin rtl433 ja urhin käytöstä
+- Blogi näyttää tarkemman esimerkin rtl_433- ja URH-ohjelman käytöstä
 - Record Signal 20-100 kHz (0,02-0,1 MHz) offsetilla kuin mitä Spectrum Analyzer antaa
 - Build a modulation decoding scheme: Edit -> Decoding -> Invert -> Morse Code.
 
@@ -100,15 +102,21 @@ Jos oletetaan, että tiedoston nimessä olevat tiedot ovat oikeita niin osa URH-
 
 ---
 ## g) Bittistä. Demoduloi signaali niin, että saat raakabittejä. Mikä on oikea modulaatio? Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin. (Monissa singaaleissa on line encoding, eli lopullisia bittejä varten näitä "raakabittejä" on vielä käsiteltävä)
-?
+Valittiin Signal view: Demodulated ja bittilistalta valittiin bitit kunnes se täytti yhden signaalin:
+<img width="706" height="474" alt="kuva" src="https://github.com/user-attachments/assets/4ad2c853-6c34-4fd7-a585-307116ae563f" />
+
+Valittuja näytteitä oli 521 ja kesto 521 mikrosekuntia(µs). Vertaamiseen käytettiin Microsoft Copilottia: 0.521ms on 0,5% eli 1/200 silmänräpäyksestä.
+
 
 ---
 ## Lähteet
-Cornelius 2022: Decode 433.92 MHz weather station data. https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html
+Cornelius 2022: [Decode 433.92 MHz weather station data](https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html)
 
-Hubacek 2019: Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs. https://www.youtube.com/watch?t=199&v=sbqMqb6FVMY&feature=youtu.be
+Hubacek 2019: [Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs](https://www.youtube.com/watch?t=199&v=sbqMqb6FVMY&feature=youtu.be)
 
-Karvinen 2026: Verkkoon tunkeutuminen ja tiedustelu. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#laksyt
+Karvinen 2026: [Verkkoon tunkeutuminen ja tiedustelu](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#laksyt)
+
+Microsoft Copilot. Hyödynnetty tehtävässä g) 0.521ms ajan vertailuun.
 
 
 
