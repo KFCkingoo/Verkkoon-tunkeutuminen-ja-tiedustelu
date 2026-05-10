@@ -51,7 +51,7 @@ sudo adduser abc wireshark
 
 ---
 ## e) Mitäs tuli surffattua? `https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap`
-Tiedot saatiin lukemalla Wireshark taulokkoa, Statistics -> Capture File Properties ja Protocol Hierarchy.
+Tiedot saatiin lukemalla Wireshark taulukkoa, Statistics -> Capture File Properties ja Protocol Hierarchy.
 
 | tyyppi | arvo |
 | - | - |
@@ -106,7 +106,8 @@ Huomattiinkin myöhemmin kun suljettiin Wireshark ikkuna, että niitä käytetti
 
 ---
 ## Lähteet
-Karvinen 2025: Network Interface Names on Linux. https://terokarvinen.com/network-interface-linux/
+Karvinen 2025: [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
 
-Karvinen 2025: Wireshark - Getting Started. https://terokarvinen.com/wireshark-getting-started/
+Karvinen 2025: [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
 
+Microsoft Copilot hyödynnetty tehtävässä g) verkkokortin lisätarkistuksessa.
