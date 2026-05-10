@@ -32,5 +32,5 @@ Jos on pakko yhdistää julkiseen avoimeen WLAN‑verkkoon, käyttäisin VPN:ä�
 ## Lähteet
 Moodle. Larin materiaali.
 
-WiFiChallenge Lab. https://lab.wifichallenge.com/
+[WiFiChallenge Lab](https://lab.wifichallenge.com/)
 
