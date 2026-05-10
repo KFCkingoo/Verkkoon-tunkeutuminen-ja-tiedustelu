@@ -78,7 +78,7 @@ Tässä esimerkkinä 1 lokeista:
 `127.0.0.1 - - [11/Apr/2026:03:53:21 +0300] "OPTIONS / HTTP/1.1" 200 181 "-" "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)"`
 
 Lokista löytyi sekä Nmap että nmap lokirivin lopusta. Lokissa tehtiin OPTIONS-pyyntö, kysyi mitä http-metodeja on tuettu.
-Lokin lopusta selviää, että pyyntö tuli NSE:n kautta. URL-linkki on dokumentaation siainti.
+Lokin lopusta selviää, että pyyntö tuli NSE:n kautta. URL-linkki on dokumentaation sijainti.
 
 Jos loki on liian suuri, niin haluttua tietoa voidaan hakea komennolla `sudo grep -i`.
 
@@ -424,11 +424,11 @@ Sivustossa on annettu tietoa antennista, sisäiset ja ulkoiset kuvat, testirapor
 
 ---
 ## Lähteet
-Bianco 2013. The Pyramid of Pain. https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html
+Bianco 2013. [The Pyramid of Pain](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html)
 
-Caltagirone et al 2013. Diamond Model. https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf
+Caltagirone et al 2013. [Diamond Model](https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf)
 
-FCC. https://www.fcc.gov/oet/ea/fccid
+[FCC](https://www.fcc.gov/oet/ea/fccid)
 
 Karvinen 2026. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#laksyt
 
