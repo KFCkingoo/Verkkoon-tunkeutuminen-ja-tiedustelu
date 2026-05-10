@@ -66,7 +66,7 @@ Takaportti oli käytössä jo 2007 lähtien.
 https://thehackernews.com/2024/08/hardware-backdoor-discovered-in-rfid.html?m=1
 ---
 ## Lähteet
-The Hacker News 2024. Hardware Backdoor Discovered in RFID Cards Used in Hotels and Offices Worldwide. https://thehackernews.com/2024/08/hardware-backdoor-discovered-in-rfid.html?m=1
+The Hacker News 2024. [Hardware Backdoor Discovered in RFID Cards Used in Hotels and Offices Worldwide](https://thehackernews.com/2024/08/hardware-backdoor-discovered-in-rfid.html?m=1)
 
 Microsoft Copilot osassa 2 APDU-komennon rakenteen tutustumiseen. https://copilot.microsoft.com/
 
